@@ -17,7 +17,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Save JSON data to file
-        run: echo "${{ inputs.json_data }}" > input_data.json
+        run: echo '${{ inputs.json_data }}' > input_data.json
+
 
       - name: Compile Typst file
         uses: syamkarni/typst-action@main 
