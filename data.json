@@ -1,0 +1,203 @@
+{
+    "personal": {
+        "fname": "f_name",
+        "address": "address here",
+        "city": "city here",
+        "country": "country here",
+        "email": "email@email.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "phone": "989898998989",
+        "plink": "https://hello.com",
+        "sname": "s_name",
+        "zip": "zip here"
+    },
+    "work": [
+        {
+            "companyName": "comp1",
+            "descriptions": [
+                "Desc1",
+                "Desc2"
+            ],
+            "endDate": "0002-03-01",
+            "location": "loc1",
+            "position": "pos2",
+            "startDate": "0001-02-01"
+        },
+        {
+            "companyName": "comp2",
+            "descriptions": [
+                "desc1",
+                "desc2"
+            ],
+            "endDate": "0004-02-01",
+            "location": "loc2",
+            "position": "pos22",
+            "startDate": "0002-02-01"
+        }
+    ],
+    "education": {
+        "educations": [
+            {
+                "instituteName": "col_1",
+                "url": "url here",
+                "area": "area of study",
+                "studyType": "type of study",
+                "startDate": "0001-02-01",
+                "endDate": "0001-02-02",
+                "location": "loc"
+            },
+            {
+                "instituteName": "institute 2",
+                "url": "url2",
+                "area": "area",
+                "studyType": "type",
+                "startDate": "0001-02-01",
+                "endDate": "0002-02-01",
+                "location": "loc2"
+            }
+        ]
+    },
+    "projects": {
+        "projects": [
+            {
+                "descriptions": [
+                    "desc1"
+                ],
+                "endDate": "0005-02-02",
+                "projectName": "pro2",
+                "startDate": "0003-02-01",
+                "subtitle": "subittle her",
+                "url": "url here"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "category": "dev",
+            "skills": [
+                "tech",
+                "dev1",
+                "dev2",
+                ""
+            ]
+        },
+        {
+            "category": "te",
+            "skills": [
+                "te1",
+                "te2",
+                "te3"
+            ]
+        },
+        {
+            "category": "skills",
+            "skills": [
+                "1",
+                "2"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "lang1",
+            "fluency": "Native Speaker"
+        },
+        {
+            "language": "lang2",
+            "fluency": "Professional Proficiency"
+        }
+    ],
+    "interests": [
+        "int1",
+        "int2"
+    ],
+    "certificates": {
+        "certificates": [
+            {
+                "name": "certi_1",
+                "date": "0001-11-11",
+                "issuer": "issuerhere",
+                "url": "ur4llll"
+            },
+            {
+                "name": "certi_2",
+                "date": "3333-02-21",
+                "issuer": "issuer",
+                "url": "urlll"
+            }
+        ]
+    },
+    "awards": {
+        "awards": [
+            {
+                "title": "award_titl",
+                "date": "0111-11-11",
+                "issuer": "issuer1",
+                "url": "urlll",
+                "location": "loc",
+                "highlights": [
+                    "highg",
+                    "2",
+                    "3"
+                ]
+            },
+            {
+                "title": "title+_111",
+                "date": "0222-02-01",
+                "issuer": "issuer_22",
+                "url": "urll ",
+                "location": "location ",
+                "highlights": [
+                    "1",
+                    "2"
+                ]
+            }
+        ]
+    },
+    "extracurricular": {
+        "activities": [
+            {
+                "endDate": "0023-02-01",
+                "highlights": [
+                    "high1",
+                    "high2"
+                ],
+                "location": "loc",
+                "organization": "org1",
+                "position": "pos",
+                "startDate": "0001-01-02",
+                "url": "url"
+            }
+        ]
+    },
+    "volunteer_data": {
+        "volunteerData": [
+            {
+                "endDate": "0004-02-12",
+                "highlights": [
+                    "high1",
+                    "2"
+                ],
+                "location": "loc ",
+                "organization": "org_v1",
+                "position": "pos",
+                "startDate": "0001-02-01",
+                "url": "url"
+            },
+            {
+                "endDate": "0005-12-11",
+                "highlights": [
+                    "1",
+                    "2"
+                ],
+                "location": "loc",
+                "organization": "org_v2",
+                "position": "pos",
+                "startDate": "0001-12-11",
+                "url": "urll"
+            }
+        ]
+    },
+    "description": "Hello I'm Datta"
+}
