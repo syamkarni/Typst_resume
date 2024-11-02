@@ -16,9 +16,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Install jq
+        run: sudo apt-get install -y jq
+      
       - name: Save JSON data to file
         run: |
-          printf '%s' "${{ inputs.json_data }}" > input_data.json
+          echo '${{ inputs.json_data }}' | jq '.' > input_data.json
+
 
 
 
