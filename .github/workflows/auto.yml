@@ -1,14 +1,18 @@
 name: Typst PDF Generation
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
+    inputs:
+      json_data:
+        description: "The JSON data to use for generating the PDF"
+        required: true
+        type: string
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -19,9 +23,8 @@ jobs:
           sudo mv typst /usr/local/bin/
           typst --version
 
-      - name: Copy JSON data file
-        run: cp data.json input_data.json
-
+      - name: Save JSON data to file
+        run: echo "${{ inputs.json_data }}" > input_data.json
 
       - name: Generate PDF from Typst template
         run: |
