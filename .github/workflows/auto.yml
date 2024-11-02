@@ -18,10 +18,11 @@ jobs:
 
       - name: Install Typst
         run: |
-          curl -L https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-gnu.tar.gz -o typst.tar.gz
+          curl -L https://github.com/typst/typst/releases/download/v0.5.0/typst-x86_64-unknown-linux-gnu.tar.gz -o typst.tar.gz
           tar -xzf typst.tar.gz
           sudo mv typst /usr/local/bin/
           typst --version
+
 
       - name: Save JSON data to file
         run: echo "${{ inputs.json_data }}" > input_data.json
