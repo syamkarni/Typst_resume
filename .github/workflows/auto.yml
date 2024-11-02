@@ -32,7 +32,7 @@ jobs:
           typst compile main.typ output/resume.pdf
 
       - name: Upload PDF as Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: Generated Resume PDF
           path: output/resume.pdf
