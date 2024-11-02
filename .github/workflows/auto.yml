@@ -1,0 +1,46 @@
+name: Typst PDF Generation
+
+on:
+  workflow_dispatch:
+    inputs:
+      json_data:
+        description: "The JSON data to use for generating the PDF"
+        required: true
+        type: string
+
+concurrency:
+  group: ${{ inputs.json_data }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Typst
+        run: |
+          curl -L https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-gnu.tar.gz -o typst.tar.gz
+          tar -xzf typst.tar.gz
+          sudo mv typst /usr/local/bin/
+          typst --version
+
+      # Step 3: Save JSON input to a file
+      - name: Save JSON data to file
+        run: echo "${{ inputs.json_data }}" > input_data.json
+
+      # Step 4: Compile PDF using Typst with the JSON data
+      - name: Generate PDF from Typst template
+        run: |
+          mkdir -p output
+          typst compile main.typ output/resume.pdf
+
+      # Step 5: Upload the PDF as an artifact
+      - name: Upload PDF as Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Generated Resume PDF
+          path: output/resume.pdf
